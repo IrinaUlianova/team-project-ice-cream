@@ -8,11 +8,6 @@
 // }
 
 .header__container {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  justify-content: space-between;
-}
-.burger-icon {
-  display: flex;
-  margin-left: auto;
 }

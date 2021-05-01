@@ -68,25 +68,6 @@ img {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .menu,
-  .menu__button {
-    display: none;
-  }
-  .burger {
-    display: flex;
-  }
-  .burger__btn {
-    display: flex;
-    margin-left: auto;
-  }
-}
-
-.header__container {
-  display: inline-flex;
-  align-items: center;
-}
-
 section,
 header,
 footer {
@@ -112,17 +93,239 @@ footer {
   }
 }
 
+.navigation {
+  display: flex;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu__link {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.31;
+  transition: color 250ms linear;
+}
+
+.menu__item:hover .menu__link,
+.menu__item:focus .menu__link {
+  color: #d41443;
+}
+
+.menu__link .menu__link--current {
+  color: #d41443;
+}
+
+.menu__button {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 0 43px;
+  min-height: 44px;
+  border-radius: 22px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.31;
+}
+
 @media screen and (max-width: 767px) {
-  .menu,
-  .menu__button {
+  .menu__button--hidden {
     display: none;
   }
-  .burger {
-    display: flex;
+}
+
+.menu__button__icon {
+  display: block;
+  margin-left: 12px;
+}
+
+@media screen and (max-width: 1279px) {
+  .menu {
+    display: none;
   }
-  .burger__btn {
-    display: flex;
-    margin-left: auto;
+}
+
+.burger {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.burger__btn {
+  cursor: pointer;
+  padding: 0;
+  background: transparent;
+  border: none;
+}
+
+.burger__icon {
+  display: block;
+  height: 18px;
+  width: 30px;
+  stroke: #d41443;
+}
+
+.page-header {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  margin-top: 6px;
+  min-width: 100%;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu__link {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.31;
+  transition: color 250ms linear;
+}
+
+.menu__item:hover .menu__link,
+.menu__item:focus .menu__link {
+  color: #d41443;
+}
+
+.menu__link .menu__link--current {
+  color: #d41443;
+}
+
+.menu__button {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 0 43px;
+  min-height: 44px;
+  border-radius: 22px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.31;
+}
+
+@media screen and (max-width: 767px) {
+  .menu__button--hidden {
+    display: none;
+  }
+}
+
+.menu__button__icon {
+  display: block;
+  margin-left: 12px;
+}
+
+@media screen and (max-width: 1279px) {
+  .menu {
+    display: none;
+  }
+}
+
+.burger {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.burger__btn {
+  cursor: pointer;
+  padding: 0;
+  background: transparent;
+  border: none;
+}
+
+.burger__icon {
+  display: block;
+  height: 18px;
+  width: 30px;
+  stroke: #d41443;
+}
+
+.hero {
+  background: #ffb8ca;
+  overflow: hidden;
+  padding-top: 193px;
+  padding-bottom: 160px;
+}
+
+.hero__container {
+  position: relative;
+}
+
+.hero__cell--left {
+  width: 230px;
+}
+
+.hero__title {
+  font-family: Titan One, sans-serif;
+  font-size: 26px;
+  font-weight: normal;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.hero__title--big {
+  font-size: 48px;
+  font-weight: normal;
+  line-height: 0.96;
+  color: #d41443;
+}
+
+.hero-btn {
+  display: flex;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.hero-btn .hero-btn__item + .hero-btn__item {
+  margin-left: 8px;
+}
+
+.hero-btn .hero-btn__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+  font-size: 8px;
+  font-weight: normal;
+  line-height: 1.25;
+  border-radius: 20px;
+}
+
+.hero-btn .hero-btn__link--primary {
+  width: 63px;
+  color: #ffffff;
+  background-color: #d41443;
+}
+
+.hero-btn .hero-btn__link--secondary {
+  width: 83px;
+  color: #d41443;
+  background-color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  .hero__cell--right,
+  .hero__label {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */

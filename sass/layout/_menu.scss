@@ -1,13 +1,66 @@
-@media screen and (max-width: 767px) {
-  .menu,
-  .menu__button {
+.navigation {
+  display: flex;
+}
+.menu {
+  display: flex;
+  align-items: center;
+}
+// .menu__item {
+//   margin-right: 35px;
+// }
+.menu__link {
+  display: block;
+  @include font(16px, bold, 21px);
+  // color: $primary-text-color;
+  transition: color 250ms linear;
+
+  .menu__item:hover &,
+  .menu__item:focus & {
+    color: $secondary-accent-color;
+  }
+  .menu__link--current {
+    color: $secondary-accent-color;
+  }
+}
+.menu__button {
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  padding: 0 43px;
+  min-height: 44px;
+  border-radius: 22px;
+  @include font(16px, bold, 21px);
+
+  &--hidden {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+}
+.menu__button__icon {
+  display: block;
+  margin-left: 12px;
+}
+@media screen and (max-width: 1279px) {
+  .menu {
     display: none;
   }
-  .burger {
-    display: flex;
-  }
-  .burger__btn {
-    display: flex;
-    margin-left: auto;
-  }
+}
+.burger {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.burger__btn {
+  cursor: pointer;
+  padding: 0;
+  background: transparent;
+  border: none;
+}
+.burger__icon {
+  display: block;
+  height: 18px;
+  width: 30px;
+  stroke: $secondary-accent-color;
 }

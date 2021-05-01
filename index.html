@@ -31,7 +31,7 @@
             <img class="logotype__image" srcset="images/hero/logotype1.png 1x, images/hero/logotype1@2x.png 2x"
             src="./images/hero/logotype1.png" alt="Логотип" width="199" height="50"></a>
           <ul class="menu">
-            <li class="menu__item"><a class="menu__link">Home</a></li>
+            <li class="menu__item"><a class="menu__link menu__link--current">Home</a></li>
             <li class="menu__item"><a class="menu__link">About us</a></li>
             <li class="menu__item"><a class="menu__link">How it’s made?</a></li>
             <li class="menu__item"><a class="menu__link">Our products</a></li>
@@ -42,24 +42,60 @@
         <button type="button" class="burger__btn">
         <svg class="burger__icon" width="20" height="12" ><use href="./images/svg/icons.svg#icon-burger"></use></svg></button>
         </div>
-        <button type="button" class="menu__button">Buy now  <svg class="header__btn__icon" height="10" 
+        <button type="button" class="menu__button menu__button--shown menu__button--hidden">Buy now  <svg class="menu__button__icon" height="10" 
   width="6" >
               <use href="./images/svg/icons.svg#icon-Vector-1"></use>
             </svg></button>
       </div>
     </header>
     <main>
-      <section class="hero">
-        <h1 class="hero__title">ice cream made with passion</h1>
-
-        <button class="hero__first-btn">Products</button>
-        <button class="hero__second-btn">How it’s made?</button>
-        <p class="hero__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et
-        </p>
+      <section class=" section hero">
+        <div class="container hero__container">
+        <div class="hero__wrapper">
+          <div class="hero__cell hero__cell--left">
+        <h1 class="hero__title">ice cream made with <span class="hero__title hero__title--big">passion</span></h1>
+<ul class="hero-btn">
+  <li class="hero-btn__item ">
+        <a href="" class="hero-btn__link hero-btn__link--primary">Products</a></li>
+         <li class="hero-btn__item "> 
+        <a class="hero-btn__link hero-btn__link--secondary">How it’s made?</a></li>
+      </ul>
+       </div>
+          <div class="hero__cell hero__cell--right">
+        <ul class="hero__list">
+          <li class="hero__item">
+            <p class="hero__count">16</p>
+            <p class="hero__text">cafes</p>
+          </li>
+          <li class="hero__item">
+            <p class="hero__count">23</p>
+            <p class="hero__text">food trucks</p>
+          </li>
+        </ul>
+      </div></div>
+      <div class="hero__label">
+      <p class="hero__description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et
+      </p>
+      <a class="hero__link hero__thumb" href="#about-hook" >
+        <img
+          class="hero__link-icon"
+          srcset="
+            /images/products/arrow-right-mob1.png 1x,
+            /images/products/arrow-right-mob1@2x.png 2x
+          "
+          src="/images/products/arrow-right-mob1.png"
+          alt="arrow"
+          width="26"
+          height="26"
+        />
+      </a>
+    </div>
+      
+      </div>
       </section>
-      <section class="products">
+      <section class=" section products">
         <p class="products__label">100% natural</p>
         <h2 class="products__title">products</h2>
         <ul class="products__list">

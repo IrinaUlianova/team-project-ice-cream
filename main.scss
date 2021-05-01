@@ -1,9 +1,13 @@
+@import "./sass/utils/mixins";
 @import "./sass/utils/variables";
 @import "./sass/utils/visually-hidden";
 
 @import "./sass/base/common";
 @import "./sass/base/container";
+@import "./sass/base/section";
+@import "./sass/components/logo";
 @import "./sass/layout/menu";
 @import "./sass/layout/hero-header";
-@import "./sass/base/section";
+
 @import "./sass/layout/menu";
+@import "./sass/layout/hero";

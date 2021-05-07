@@ -1,0 +1,14 @@
+.about {
+  &__bold-desc {
+    @include font(12px, 500, 19px);
+    color: #000000;
+  }
+  &__desc {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.58;
+    color: #907e82;
+  }
+}

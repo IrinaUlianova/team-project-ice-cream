@@ -1,0 +1,26 @@
+.products {
+  &__item:first-child {
+    background-color: $primary-accent-color;
+  }
+  &__item:nth-child(2n) {
+    background-color: #f0d1a5;
+  }
+  &__item:last-child {
+    background-color: #c2e297;
+  }
+  &__subtitle {
+    @include font(20px, normal, 23px);
+    font-family: Titan One;
+    font-style: normal;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  &__text {
+    @include font(14px, bold, 21px);
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+  }
+}
